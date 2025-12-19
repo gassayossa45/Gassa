@@ -79,5 +79,8 @@ with col1_graph:
 with col2_tools:
     st.header("Analyse-Tools")
     st.selectbox("Welcher Wert?", [1, 2, 3])
-    st.image("lebenslauf.jpg",width=200,channels="RGB", caption="Ich bin der Owner")
-    st.video("https://www.youtube.com/watch?v=g5imnbSwZEU&pp=ugUEEgJmcg%3D%3D")
+    #st.image("lebenslauf.jpg",width=200,channels="RGB", caption="Ich bin der Owner")
+    #st.video("https://www.youtube.com/watch?v=g5imnbSwZEU&pp=ugUEEgJmcg%3D%3D")
+    #st.video("https://www.youtube.com/watch?v=g5imnbSwZEU&pp=ugUEEgJmcg%3D%3D")
+    #st.video("https://www.youtube.com/watch?v=g5imnbSwZEU&pp=ugUEEgJmcg%3D%3D")
+    #st.video("https://www.youtube.com/watch?v=g5imnbSwZEU&pp=ugUEEgJmcg%3D%3D")

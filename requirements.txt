@@ -1,6 +1,6 @@
 # Basis-Pakete für Streamlit-App
 streamlit
-
+pillow
 # Datenanalyse
 pandas
 numpy
