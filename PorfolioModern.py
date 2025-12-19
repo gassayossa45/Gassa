@@ -1,6 +1,8 @@
 import streamlit as st
 import base64
 from PIL import Image
+#from streamlit_pdf_viewer import pdf_viewer
+
 
 # ---------------------------------------------------------
 # Grundeinstellungen
@@ -274,20 +276,4 @@ st.download_button(
     mime="application/pdf"
 )
 
-# --- Session State für PDF Viewer ---
-if "show_pdf" not in st.session_state:
-    st.session_state.show_pdf = False
 
-st.markdown("### 👀 Lebenslauf ansehen")
-
-# Toggle-Button
-if st.button("PDF anzeigen / schließen"):
-    st.session_state.show_pdf = not st.session_state.show_pdf
-
-# PDF anzeigen
-if st.session_state.show_pdf:
-    with open("Lebenslaufgassa.pdf", "rb") as f:
-        base64_pdf = base64.b64encode(f.read()).decode("utf-8")
-
-    pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="100%" height="900"></iframe>'
-    st.markdown(pdf_display, unsafe_allow_html=True)
