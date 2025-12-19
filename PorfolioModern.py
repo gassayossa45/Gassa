@@ -254,6 +254,13 @@ Automatisierung, Datenanalyse und Workflow-Engineering.
             """,
             unsafe_allow_html=True,
         )
+        st.subheader("📞 Kontakt")
+
+        st.write("Wenn Sie mich erreichen möchten:")
+
+        st.markdown("""
+        **Telefon:** +49 176 12345678   
+        """)
 # --- Lebenslauf Download ---
 st.markdown("### 📄 Lebenslauf herunterladen")
 
