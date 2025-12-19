@@ -259,7 +259,7 @@ Automatisierung, Datenanalyse und Workflow-Engineering.
         st.write("Wenn Sie mich erreichen möchten:")
 
         st.markdown("""
-        **Telefon:** +49 176 12345678   
+        **Telefon:** +49 152 13629046   
         """)
 # --- Lebenslauf Download ---
 st.markdown("### 📄 Lebenslauf herunterladen")
