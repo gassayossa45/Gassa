@@ -267,10 +267,18 @@ st.download_button(
     mime="application/pdf"
 )
 
-# --- Lebenslauf erst anzeigen, wenn man klickt ---
+# --- Session State für PDF Viewer ---
+if "show_pdf" not in st.session_state:
+    st.session_state.show_pdf = False
+
 st.markdown("### 👀 Lebenslauf ansehen")
 
-if st.button("Lebenslauf anzeigen"):
+# Toggle-Button
+if st.button("PDF anzeigen / schließen"):
+    st.session_state.show_pdf = not st.session_state.show_pdf
+
+# PDF anzeigen
+if st.session_state.show_pdf:
     with open("Lebenslaufgassa.pdf", "rb") as f:
         base64_pdf = base64.b64encode(f.read()).decode("utf-8")
 

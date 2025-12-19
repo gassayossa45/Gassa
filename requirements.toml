@@ -1,0 +1,16 @@
+# Basis-Pakete für Streamlit-App
+streamlit
+pillow
+# Datenanalyse
+pandas
+numpy
+
+# Visualisierung
+matplotlib
+seaborn
+
+# Optional: interaktive Plots
+plotly
+
+# Optional: Machine Learning / Statistik
+scikit-learn
